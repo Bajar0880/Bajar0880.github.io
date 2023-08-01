@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:wght@300;400&family=Nunito:wght@200&family=Oswald:wght@200&family=Playfair+Display&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <main>
+    <div class="container">
+      <header class="container-navigation">
+        <nav class="nav-bar">
+          <h2 class="logo" id="#">Josh<span>B</span></h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+
+          <div class="burger" onclick="showMenu()">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="backdrop" onclick="closeMenu()"></div>
+      <div class="mobile-menu">
+        <ul onclick="closeMenu()">
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </div>
+
+      <!--Main profile-->
+        <div class="profile-container">
+          <div class="intro-text">
+            <h1 class="intro-span">Hi, I am Joshua.</h1>
+            <h2 class="small-text">I'm a front-end developer</h2>
+          </div>
+
+          <div class="image-container"><img src="profile.jpg"></div>
+        </div>
+     
+      <script src="portfolio.js"></script>
+    </main>
+  </body>
+</html>

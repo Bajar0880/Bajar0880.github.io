@@ -14,10 +14,10 @@
     <div class="container">
       <header class="container-navigation">
         <nav class="nav-bar">
-          <h2 class="logo" id="#">Josh<span>B</span></h2>
+          <h2 class="logo"><a href="#">Josh<span>B</span></a></h2>
           <ul>
             <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#">Contacts</a></li>
           </ul>
 
@@ -34,20 +34,55 @@
         <ul onclick="closeMenu()">
           <li><a href="#">About Me</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </div>
 
       <!--Main profile-->
-        <div class="profile-container">
-          <div class="intro-text">
-            <h1 class="intro-span">Hi, I am Joshua.</h1>
-            <h2 class="small-text">I'm a front-end developer</h2>
-          </div>
-
-          <div class="image-container"><img src="profile.jpg"></div>
+      <div class="profile-container">
+        <div class="intro-text">
+          <h1 class="intro">Hi, I am <span>Joshua.</span></h1>
+          <h2 class="small-text">I'm a <span>Frontend Developer</span></h2>
+       
+         <div class="project-buttons">
+          <button class="project-button js-project-button">Projects</button>
+          <button class="linkIn-button js-linkIn-button">LinkedIn</button>
+          <button class="github-button js-github-button">
+            Github
+            <img src="github-fill.svg" class="github">
+          </button>
+         </div>
         </div>
-     
+          
+        <div class="image-container">
+          <img src="profile.jpg">
+        </div>
+      </div>
+
+      <div class="space"></div>
+
+     <div class="project-container" id="projects">
+
+      <div class="project-storage">
+        <div class="project-border">
+            <div class="project-title">
+              <h2>Projects<hr></h2> 
+            </div>
+            <div>
+              <div class="project-info">
+                <div>asdaasda</div>
+                <div>asdad</div>
+              </div>
+
+              <div class="project-info"></div>
+
+              <div class="project-info"></div>
+
+              <div class="project-info"></div>
+            </div>
+        </div>
+        </div>
+    </div>
       <script src="portfolio.js"></script>
     </main>
   </body>

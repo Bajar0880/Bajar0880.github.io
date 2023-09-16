@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:wght@300;400&family=Nunito:wght@200&family=Oswald:wght@200&family=Playfair+Display&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="css-folder/styles.css" />
+  </head>
+  <body>
+      <header class="container-navigation">
+        <nav class="nav-bar">
+          <h2 class="logo"><a href="#">Josh<span>B</span></a></h2>
+          <ul>
+            <li><a href="#about_me">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+
+          <div class="burger" onclick="showMenu()">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="backdrop" onclick="closeMenu()"></div>
+      <div class="mobile-menu">
+        <ul onclick="closeMenu()">
+          <li><a href="#about_me">About Me</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+
+      <!--INTRO-->
+    <main>
+      <div class="profile-container">
+        <div class="intro-text">
+          <h1 class="intro">Hi, I am <span>Joshua.</span></h1>
+          <h2 class="small-text">I'm a <span>Frontend Developer</span></h2>
+
+
+          <div class="project-buttons">
+            <button class="project-button js-project-button">Projects</button>
+            <button class="linkIn-button js-linkIn-button">LinkedIn</button>
+            <button class="github-button js-github-button github">
+              Github<img src="github-fill.svg">
+            </button>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="profile.jpg">
+        </div>
+      </div>
+
+      <div class="space"></div>
+
+      <!-- ABOUT ME  -->
+      <div class="about-me" id="about_me">
+        <div class="about-me-info">
+          <h2>
+            About Me
+          </h2>
+          <p>I am Joshua Bajar, 20 years old studying of Computer Science at President Ramon Magsaysay State University</p>
+          <button class="resume-button js-resume-button">
+            <a href="https://drive.google.com/file/d/1tep1VwlJE8B2oKOE3mwQ6M5R8OcCTQiV/view?usp=drive_link" target="_blank">
+             Resume
+            </a>
+           </button>
+        </div>
+        <div class="image-info">
+          <div class="background-profile">
+            <img src="profile.jpg">
+          </div>
+          <div class="main-image">
+          <img src="profile.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="space"></div>
+
+      <!-- PROJECT INFO -->
+     <div class="project-container" id="projects">
+        <div class="project-storage">
+          <div class="project-border">
+              <div class="project-title">
+                <h2>Projects<hr></h2> 
+              </div>
+            <div class="project-info">
+
+                <div class="project-one">
+                  <div>Sample1</div>
+                  <div class="todo-img"><img src="todo-project.png"></div>
+                </div>
+                
+                <div class="project-one">
+                  <div>Sample2</div>
+                  <div class="todo-img"><img src="todo-project.png"></div>
+                </div>
+
+      
+                <div class="project-one">
+                  <div>Sample3</div>
+                  <div class="todo-img"><img src="todo-project.png"></div>
+                </div>
+    
+                <div class="project-one">
+                  <div>Sample4</div>
+                  <div class="todo-img"><img src="todo-project.png"></div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="space"></div>
+      </div>
+
+
+      
+      <script src="js-folder/portfolio.js"></script>
+    </main>
+  </body>
+</html>
